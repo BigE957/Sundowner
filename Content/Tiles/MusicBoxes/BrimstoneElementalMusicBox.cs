@@ -48,9 +48,9 @@ namespace Sundowner.Content.Tiles.MusicBoxes
                 Vector2 velocity = new(Main.WindForVisuals * 2f, -0.5f);
                 velocity.X *= 1f + Main.rand.NextFloat(-0.5f, 0.5f);
                 velocity.Y *= 1f + Main.rand.NextFloat(-0.5f, 0.5f);
+                
                 if (goreType == 572)
                     position.X -= 8f;
-
                 if (goreType == 571)
                     position.X -= 4f;
 
