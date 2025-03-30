@@ -1,0 +1,123 @@
+ModCompat: {
+	MusicDisplay: {
+		ModName: Sundowner
+
+		BrimstoneElemental: {
+			DisplayName: Sin of Idolatry
+			Author: by Sidetracked
+		}
+
+		CeaselessVoid: {
+			DisplayName: Second Law
+			Author: by Sidetracked
+		}
+
+		StormWeaver: {
+			DisplayName: Supercell Rogue
+			Author: by Sidetracked
+		}
+
+		Signus: {
+			DisplayName: Your Silhouette
+			Author: by Sidetracked
+		}
+
+		ExoMechs: {
+			DisplayName: Dei Machinae
+			Author: by Sidetracked
+		}
+	}
+}
+
+Items: {
+	Placeables: {
+		BrimstoneElementalMusicBox: {
+			DisplayName: Music Box (VS Brimstone Elemental)
+			Tooltip: Plays 'Sin of Idolatry' by Sidetracked
+		}
+
+		CeaselessVoidMusicBox: {
+			DisplayName: Music Box (VS Ceaseless Void)
+			Tooltip: Plays 'Second Law' by Sidetracked
+		}
+
+		ExoMechsMusicBox: {
+			DisplayName: Music Box (VS Exo Mechs)
+			Tooltip: Plays 'Dei Machinae' by Sidetracked
+		}
+
+		SignusMusicBox: {
+			DisplayName: Music Box (VS Signus)
+			Tooltip: Plays 'Your Silhouette' by Sidetracked
+		}
+
+		StormWeaverMusicBox: {
+			DisplayName: Music Box (VS Storm Weaver)
+			Tooltip: Plays 'Supercell Rogue' by Sidetracked
+		}
+	}
+}
+
+Configs: {
+	SundownerConfig: {
+		DisplayName: Config
+		Headers.SongOverrides: Song Overriding
+
+		OverrideBrimstoneElemental: {
+			Label: "[i:LivingFireBlock] Override 'Left Alone'"
+			Tooltip: Replaces 'Left Alone' By DM Dokuro with 'Sin of Idolatry' By Sidetracked during the Brimstone Elemental fight.
+		}
+
+		OverrideStormWeaver: {
+			Label: "[i:LightningCarrot] Override 'Sentinels of the Devourer (Type W)'"
+			Tooltip: Replaces 'Sentinels of the Devourer (Type W)' By DM Dokuro with 'Supercell Rogue' By Sidetracked during the Storm Weaver fight.
+		}
+
+		OverrideCeaselessVoid: {
+			Label: "[i:DarkShard] Override 'Sentinels of the Devourer (Type V)'"
+			Tooltip: Replaces 'Sentinels of the Devourer (Type V)' By DM Dokuro with 'Second Law' By Sidetracked during the Ceaseless Void fight.
+		}
+
+		OverrideSignus: {
+			Label: "[i:3054] Override 'Sentinels of the Devourer (Type S)'"
+			Tooltip: Replaces 'Sentinels of the Devourer (Type S)' By DM Dokuro with 'Your Silhouette' By Sidetracked during the Signus fight.
+		}
+
+		OverrideExoMechs: {
+			Label: "[i:Nanites] Override 'Inferior Fabrications'"
+			Tooltip: Replaces 'Inferior Fabrications' By PinpinNeon with 'Dei Machinae' By Sidetracked during the Exo Mechs fight.
+		}
+	}
+
+	Configs: {
+		SundownerConfig: {
+			DisplayName: Sundowner Config
+			Headers.SongOverrides: Song Overrides Header
+
+			OverrideBrimstoneElemental: {
+				Label: Override Brimstone Elemental
+				Tooltip: ""
+			}
+
+			OverrideStormWeaver: {
+				Label: Override Storm Weaver
+				Tooltip: ""
+			}
+
+			OverrideCeaselessVoid: {
+				Label: Override Ceaseless Void
+				Tooltip: ""
+			}
+
+			OverrideSignus: {
+				Label: Override Signus
+				Tooltip: ""
+			}
+
+			OverrideExoMechs: {
+				Label: Override Exo Mechs
+				Tooltip: ""
+			}
+		}
+	}
+}

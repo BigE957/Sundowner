@@ -1,0 +1,17 @@
+Sundowner is a music mod featuring new themes composed by Sidetracked for a handful of Calamity Mod bosses. These themes will override the song that would normally play, however you can disable this for individual songs using the mod's config. The mod also adds music boxes for each of the added songs, and is compatible with the Music Display mod.
+
+At current, it features themes for:
+ - Brimstone Elemental
+ - Storm Weaver
+ - Ceaseless Void
+ - Signus
+ - The Exo Mechs
+
+Credits:
+ Music: Sidetracked
+ Sprites: Sidetracked
+ Logo: Zarachard
+ Programming: BigE
+
+Sidetracked's Channel: 
+ https://www.youtube.com/@SidetrackedTack

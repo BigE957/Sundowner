@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Import tModLoader mod properties -->
+	<Import Project="..\tModLoader.targets" />
+
+	<!-- General -->
+	<PropertyGroup>
+		
+	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="Assets\MusicBoxes\BrimstoneElementalMusicBox.png" />
+	  <None Remove="Assets\MusicBoxes\BrimstoneElemental\Item.png" />
+	  <None Remove="Assets\MusicBoxes\CeaselessVoidMusicBox.png" />
+	  <None Remove="Assets\MusicBoxes\CeaselessVoid\Item.png" />
+	  <None Remove="Assets\MusicBoxes\ExoMechsMusicBox.png" />
+	  <None Remove="Assets\MusicBoxes\ExoMechs\Item.png" />
+	  <None Remove="Assets\MusicBoxes\SignusMusicBox.png" />
+	  <None Remove="Assets\MusicBoxes\Signus\Item.png" />
+	  <None Remove="Assets\MusicBoxes\StormWeaverMusicBox.png" />
+	  <None Remove="Assets\MusicBoxes\StormWeaver\Item.png" />
+	</ItemGroup>
+
+	<!-- References -->
+	<ItemGroup>
+	  <Reference Include="CalamityMod">
+	    <HintPath>..\..\ModReader\CalamityMod\CalamityMod.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>
