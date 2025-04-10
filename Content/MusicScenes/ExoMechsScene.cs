@@ -25,6 +25,6 @@ namespace Sundowner.Content.MusicScenes
             NPC.AnyNPCs(ModContent.NPCType<ThanatosBody2>()) ||
             NPC.AnyNPCs(ModContent.NPCType<ThanatosTail>()))
             && CalamityGlobalNPC.draedonAmbience == -1;
-        public override SceneEffectPriority Priority => (SceneEffectPriority)10;
+        public override SceneEffectPriority Priority => ModLoader.TryGetMod("InfernumMode", out _) ? (SceneEffectPriority)11 : (SceneEffectPriority)9;
     }
 }
