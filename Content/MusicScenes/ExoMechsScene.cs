@@ -8,13 +8,14 @@ using CalamityMod.NPCs.ExoMechs.Artemis;
 using CalamityMod.NPCs.ExoMechs.Thanatos;
 using Sundowner.Common;
 using tModPorter;
+using CalamityMod.Events;
 
 namespace Sundowner.Content.MusicScenes
 {
     internal class ExoMechsScene : ModSceneEffect
     {
         public override int Music => MusicLoader.GetMusicSlot(SundownerMod.Instance, "Assets/Music/ExoMechs");
-        public override bool IsSceneEffectActive(Player player) => ModContent.GetInstance<SundownerConfig>().OverrideExoMechs && (
+        public override bool IsSceneEffectActive(Player player) => ModContent.GetInstance<SundownerConfig>().OverrideExoMechs && !BossRushEvent.BossRushActive && (
             NPC.AnyNPCs(ModContent.NPCType<Draedon>()) ||
             NPC.AnyNPCs(ModContent.NPCType<Apollo>()) ||
             NPC.AnyNPCs(ModContent.NPCType<AresBody>()) ||
