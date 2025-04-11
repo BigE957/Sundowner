@@ -6,6 +6,12 @@ namespace Sundowner.Common;
 [BackgroundColor(128, 68, 69, 216)]
 public class SundownerConfig : ModConfig
 {
+    public static SundownerConfig Instance;
+    public override void OnLoaded()
+    {
+        Instance = this;
+    }
+
     public override ConfigScope Mode => ConfigScope.ClientSide;
 
     [Header("SongOverrides")]
