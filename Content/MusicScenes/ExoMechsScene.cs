@@ -7,7 +7,6 @@ using CalamityMod.NPCs.ExoMechs.Ares;
 using CalamityMod.NPCs.ExoMechs.Artemis;
 using CalamityMod.NPCs.ExoMechs.Thanatos;
 using Sundowner.Common;
-using tModPorter;
 using CalamityMod.Events;
 
 namespace Sundowner.Content.MusicScenes
@@ -25,7 +24,8 @@ namespace Sundowner.Content.MusicScenes
                                                                    NPC.AnyNPCs(ModContent.NPCType<ThanatosBody1>()) ||
                                                                    NPC.AnyNPCs(ModContent.NPCType<ThanatosBody2>()) ||
                                                                    NPC.AnyNPCs(ModContent.NPCType<ThanatosTail>())) && 
-                                                                   CalamityGlobalNPC.draedonAmbience == -1;
+                                                                   CalamityGlobalNPC.draedonAmbience == -1 &&
+                                                                   (!ModLoader.TryGetMod("InfernumMode", out _) || ((Draedon)Main.npc[NPC.FindFirstNPC(ModContent.NPCType<Draedon>())].ModNPC).DefeatTimer > 0);
         public override SceneEffectPriority Priority => ModLoader.TryGetMod("InfernumMode", out _) ? (SceneEffectPriority)11 : (SceneEffectPriority)9;
     }
 }
