@@ -25,6 +25,9 @@
 	  <Reference Include="CalamityMod">
 	    <HintPath>..\..\ModReader\CalamityMod\CalamityMod.dll</HintPath>
 	  </Reference>
+	  <Reference Include="MonoStereoMod.Dependencies">
+	    <HintPath>lib\MonoStereoMod.Dependencies.dll</HintPath>
+	  </Reference>
 	</ItemGroup>
 
 </Project>

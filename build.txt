@@ -1,4 +1,5 @@
 displayName = Sundowner: Calamity Music
 author = Sidetracked and BigE
-version = 1.0.3
-modReferences = CalamityMod
+version = 1.0.4
+modReferences = CalamityMod, MonoStereoMod
+dllReferences = MonoStereoMod.Dependencies
