@@ -14,7 +14,7 @@ namespace Sundowner.Content.MusicScenes
         public override bool IsSceneEffectActive(Player player) => SundownerConfig.Instance.OverrideCeaselessVoid && 
                                                                    NPC.AnyNPCs(ModContent.NPCType<CeaselessVoid>()) && 
                                                                    CalamityGlobalNPC.ghostBoss == -1 && 
-                                                                   (!ModCompat.CheckInfernum() || (CalamityGlobalNPC.voidBoss == -1 || Main.npc[CalamityGlobalNPC.voidBoss].ai[0] != 0f)) && 
+                                                                   (!ModCompat.CheckInfernum(true) || (CalamityGlobalNPC.voidBoss == -1 || Main.npc[CalamityGlobalNPC.voidBoss].ai[0] != 0f)) && 
                                                                    !BossRushEvent.BossRushActive;
         public override SceneEffectPriority Priority => ModCompat.CheckInfernum() ? (SceneEffectPriority)10 : SceneEffectPriority.BossHigh;
     }

@@ -9,9 +9,9 @@ using Microsoft.Xna.Framework;
 
 namespace Sundowner.Content.Tiles.MusicBoxes
 {
-    public class SignusMusicBox : ModTile
+    public class CeaselessVoidMusicBoxTIle : ModTile
     {
-        public override string Texture => "Sundowner/Assets/MusicBoxes/Signus/Tile";
+        public override string Texture => "Sundowner/Assets/MusicBoxes/CeaselessVoid/Tile";
         public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
@@ -31,10 +31,11 @@ namespace Sundowner.Content.Tiles.MusicBoxes
             Player player = Main.LocalPlayer;
             player.noThrow = 2;
             player.cursorItemIconEnabled = true;
-            player.cursorItemIconID = ModContent.ItemType<Items.MusicBoxes.SignusMusicBox>();
+            player.cursorItemIconID = ModContent.ItemType<Items.MusicBoxes.CeaselessVoidMusicBox>();
         }
 
         public override bool CreateDust(int i, int j, ref int type) => false;
+
 
         public override void DrawEffects(int i, int j, SpriteBatch spriteBatch, ref TileDrawInfo drawData)
         {

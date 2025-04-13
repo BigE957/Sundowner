@@ -9,9 +9,9 @@ using Microsoft.Xna.Framework;
 
 namespace Sundowner.Content.Tiles.MusicBoxes
 {
-    public class ExoMechsMusicBox : ModTile
+    public class BrimstoneElementalMusicBoxTile : ModTile
     {
-        public override string Texture => "Sundowner/Assets/MusicBoxes/ExoMechs/Tile";
+        public override string Texture => "Sundowner/Assets/MusicBoxes/BrimstoneElemental/Tile";
         public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
@@ -31,7 +31,7 @@ namespace Sundowner.Content.Tiles.MusicBoxes
             Player player = Main.LocalPlayer;
             player.noThrow = 2;
             player.cursorItemIconEnabled = true;
-            player.cursorItemIconID = ModContent.ItemType<Items.MusicBoxes.ExoMechsMusicBox>();
+            player.cursorItemIconID = ModContent.ItemType<Items.MusicBoxes.BrimstoneElementalMusicBox>();
         }
 
         public override bool CreateDust(int i, int j, ref int type) => false;
@@ -48,9 +48,9 @@ namespace Sundowner.Content.Tiles.MusicBoxes
                 Vector2 velocity = new(Main.WindForVisuals * 2f, -0.5f);
                 velocity.X *= 1f + Main.rand.NextFloat(-0.5f, 0.5f);
                 velocity.Y *= 1f + Main.rand.NextFloat(-0.5f, 0.5f);
+                
                 if (goreType == 572)
                     position.X -= 8f;
-
                 if (goreType == 571)
                     position.X -= 4f;
 

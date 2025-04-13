@@ -9,9 +9,9 @@ using Microsoft.Xna.Framework;
 
 namespace Sundowner.Content.Tiles.MusicBoxes
 {
-    public class StormWeaverMusicBox : ModTile
+    public class ExoMechsMusicBoxTile : ModTile
     {
-        public override string Texture => "Sundowner/Assets/MusicBoxes/StormWeaver/Tile";
+        public override string Texture => "Sundowner/Assets/MusicBoxes/ExoMechs/Tile";
         public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
@@ -31,7 +31,7 @@ namespace Sundowner.Content.Tiles.MusicBoxes
             Player player = Main.LocalPlayer;
             player.noThrow = 2;
             player.cursorItemIconEnabled = true;
-            player.cursorItemIconID = ModContent.ItemType<Items.MusicBoxes.StormWeaverMusicBox>();
+            player.cursorItemIconID = ModContent.ItemType<Items.MusicBoxes.ExoMechsMusicBox>();
         }
 
         public override bool CreateDust(int i, int j, ref int type) => false;

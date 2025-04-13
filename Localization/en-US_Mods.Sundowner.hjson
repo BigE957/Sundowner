@@ -56,6 +56,11 @@ Items: {
 			Tooltip: Plays 'Supercell Rogue' by Sidetracked
 		}
 	}
+
+	MonoStereoTest: {
+		DisplayName: Mono Stereo Test
+		Tooltip: ""
+	}
 }
 
 Configs: {

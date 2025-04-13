@@ -15,6 +15,6 @@ namespace Sundowner.Content.Items.MusicBoxes
             ItemID.Sets.ShimmerTransformToItem[Type] = ItemID.MusicBox;
         }
 
-        public override void SetDefaults() => Item.DefaultToMusicBox(ModContent.TileType<Tiles.MusicBoxes.ExoMechsMusicBox>(), 0);
+        public override void SetDefaults() => Item.DefaultToMusicBox(ModContent.TileType<Tiles.MusicBoxes.ExoMechsMusicBoxTile>(), 0);
     }
 }
