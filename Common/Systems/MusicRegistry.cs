@@ -1,4 +1,6 @@
-﻿using Sundowner.Content.Items.MusicBoxes;
+﻿using MonoStereo.Filters;
+using MonoStereoMod;
+using Sundowner.Content.Items.MusicBoxes;
 using Sundowner.Content.Tiles.MusicBoxes;
 using Terraria;
 using Terraria.ModLoader;

@@ -25,8 +25,16 @@ namespace Sundowner.Content.Items.Debug
         }
         public override bool? UseItem(Player player)
         {
-            MonoStereoSystem.CheckTrack = !MonoStereoSystem.CheckTrack;
-            //AudioManager.MasterMixer.Volume = 0;
+            MonoStereoAudioTrack track = MonoStereoMod.MonoStereoMod.GetSong(Main.curMusic);
+
+            if (track != null)
+            {
+                Main.NewText("Track Detected!");
+            }
+            else
+            {
+                Main.NewText("No Track Detected!");
+            }
             return true;
         }
     }
