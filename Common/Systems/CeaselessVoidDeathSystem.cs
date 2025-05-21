@@ -73,6 +73,10 @@ namespace Sundowner.Common.Systems
 
             CeaselessVoidAlive = true;
 
+            //Incase Ceaseless decides to be a motherfucker and not finish its death animation.
+            if (NPC.AnyNPCs(ModContent.NPCType<DarkEnergy>()))
+                ((CeaselessVoid)Main.npc[VoidIndex].ModNPC).playedbuildsound = false;
+
             if (((CeaselessVoid)Main.npc[VoidIndex].ModNPC).playedbuildsound)
             {
                 currentMusic = MonoStereoMod.MonoStereoMod.GetSong(Main.curMusic);
