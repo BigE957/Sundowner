@@ -1,7 +1,4 @@
 ﻿using ReLogic.Utilities;
-using System;
-using System.Numerics;
-using Terraria;
 using Terraria.Audio;
 using Terraria.Localization;
 using Terraria.ModLoader;
