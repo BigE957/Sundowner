@@ -19,12 +19,12 @@
 	  <None Remove="Assets\MusicBoxes\StormWeaverMusicBox.png" />
 	  <None Remove="Assets\MusicBoxes\StormWeaver\Item.png" />
 	</ItemGroup>
-
-	<!-- References -->
 	<ItemGroup>
 	  <Reference Include="CalamityMod">
 	    <HintPath>..\..\ModReader\CalamityMod\CalamityMod.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
+
+	<!-- References -->
 
 </Project>
