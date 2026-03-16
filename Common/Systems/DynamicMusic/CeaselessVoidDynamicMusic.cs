@@ -48,12 +48,11 @@ public class CeaselessVoidDynamicMusic : LayeredDynamicMusic
 
         if (VoidIndex != -1)
         {
-
             if (ModCompat.CheckInfernum(true))
             {
                 NPC ceaseless = Main.npc[VoidIndex];
 
-                if (ceaseless.ai[0] == 14 && ceaseless.ai[1] > 360)
+                if (ceaseless.ai[0] == 14 && ceaseless.ai[1] > 365) //Should be 5 seconds before CV actualy dies, which is about when the base cal build up sound that our base cal timing relies on starts
                 {
                     _playbackSpeed.Speed += 0.004f;
                     DyingAPainfulDeath = true;
