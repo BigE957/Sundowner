@@ -37,14 +37,7 @@ public class CeaselessVoidDynamicMusic : LayeredDynamicMusic
     protected override void PostUpdate()
     {
         int slot = MusicLoader.GetMusicSlot(SundownerMod.Instance, "Assets/Music/CeaselessVoid");
-        if (Main.musicBox2 == slot)
-        {
-            _playbackSpeed.Speed = 1f;
-            DyingAPainfulDeath = false;
-            return;
-        }
-
-        if (Main.musicFade[slot] == 0f)
+        if (Main.musicBox2 == slot || Main.musicFade[slot] == 0f)
         {
             _playbackSpeed.Speed = 1f;
             DyingAPainfulDeath = false;
