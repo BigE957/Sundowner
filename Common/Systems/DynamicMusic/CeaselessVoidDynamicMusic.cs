@@ -55,18 +55,32 @@ public class CeaselessVoidDynamicMusic : LayeredDynamicMusic
 
         if (VoidIndex != -1)
         {
-            if (NPC.AnyNPCs(ModContent.NPCType<DarkEnergy>()))
-                ((CeaselessVoid)Main.npc[VoidIndex].ModNPC).playedbuildsound = false;
 
-            if (((CeaselessVoid)Main.npc[VoidIndex].ModNPC).playedbuildsound)
+            if (ModCompat.CheckInfernum(true))
             {
-                _playbackSpeed.Speed += 0.004f;
-                DyingAPainfulDeath = true;
+                NPC ceaseless = Main.npc[VoidIndex];
+
+                if (ceaseless.ai[0] == 14 && ceaseless.ai[1] > 360)
+                {
+                    _playbackSpeed.Speed += 0.004f;
+                    DyingAPainfulDeath = true;
+                }
+                else if (_playbackSpeed.Speed != 1f)
+                    _playbackSpeed.Speed = 1f;
             }
             else
             {
-                if (_playbackSpeed.Speed != 1f)
-                    _playbackSpeed.Speed = 1f;
+                if (NPC.AnyNPCs(ModContent.NPCType<DarkEnergy>()))
+                    ((CeaselessVoid)Main.npc[VoidIndex].ModNPC).playedbuildsound = false;
+
+                if (((CeaselessVoid)Main.npc[VoidIndex].ModNPC).playedbuildsound)
+                {
+                    _playbackSpeed.Speed += 0.004f;
+                    DyingAPainfulDeath = true;
+                    Main.npc[VoidIndex].netOffset = Main.rand.NextVector2Circular(1f, 1f) * (_playbackSpeed.Speed - 1) * 16f;
+                }
+                else if (_playbackSpeed.Speed != 1f)
+                     _playbackSpeed.Speed = 1f;
             }
         }
         else if (DyingAPainfulDeath)
