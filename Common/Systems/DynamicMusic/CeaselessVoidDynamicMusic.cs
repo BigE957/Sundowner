@@ -19,7 +19,7 @@ public class CeaselessVoidDynamicMusic : LayeredDynamicMusic
     private PlaybackSpeedEffect _playbackSpeed;
     private bool DyingAPainfulDeath = false;
 
-    protected override bool CanUpdate() => NPC.AnyNPCs(ModContent.NPCType<CeaselessVoid>()) || DyingAPainfulDeath || Main.curMusic == MusicLoader.GetMusicSlot(SundownerMod.Instance, "Assets/Music/CeaselessVoid");
+    protected override bool CanUpdate() => DyingAPainfulDeath || NPC.AnyNPCs(ModContent.NPCType<CeaselessVoid>()) || Main.curMusic == MusicLoader.GetMusicSlot(SundownerMod.Instance, "Assets/Music/CeaselessVoid");
 
     protected override int GetDesiredLayerIndex() => 0;
 
